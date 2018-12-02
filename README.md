@@ -7,7 +7,11 @@ How it works:
 $threads = new Threads;
 
 // create a new function that these threads should run
-$threads->set(function($number){echo $number . "\n";});
+$threads->set(function($number){
+
+	echo $number . "\n";
+
+});
 
 // create 10 threads with param 0 to 9
 $threads->spawn([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
