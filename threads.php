@@ -1,6 +1,6 @@
 <?php
 
-class Thread {
+class Threads {
 
 	private $run = null;
 	private $threads = [];
